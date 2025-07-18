@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 export function useAuth() {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(false);
-  // Custom logic here (simulate loading/user)
+  // Simulate a logged-in user for dev/testing
+  const [user] = useState({ name: "Test User" });
+  const [loading] = useState(false);
   return { user, loading };
 }
